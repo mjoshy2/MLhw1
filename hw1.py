@@ -1,3 +1,8 @@
+#Martin Joshy
+#PSID 1495688
+#homework 1
+#ML 6342
+
 print(__doc__)
 
 import numpy as np
