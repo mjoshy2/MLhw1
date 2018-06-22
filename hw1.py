@@ -1,6 +1,5 @@
 print(__doc__)
 
-
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import datasets, svm
@@ -17,9 +16,9 @@ y=y[y!=0]
 
 #initializing a dimensionality reduction algorithm (SelectKBest)
 #remove identation below to use PCA or NMF for dimensionality reduction
-#test = SelectKBest(chi2,k=2)
+test = SelectKBest(chi2,k=2)
 #test = PCA(iterated_power=7, n_components=2)
-test = NMF(n_components=2)
+#test = NMF(n_components=2)
 
 #transforming data to a two dimensional feature space
 X = test.fit_transform(X,y)
